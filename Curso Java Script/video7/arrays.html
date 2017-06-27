@@ -26,10 +26,21 @@ var articulos=["zapatillas","camisetas","pantalon","calsetines"];
 
         document.write(articulos[1] + "</strong></p>");
 
-        alert(articulos.length);
-		    
-		    
-		
+        document.write("<p>El ultimo elemento es <strong>");
+
+        document.write(articulos[articulos.length-1]+"</strong></p>");
+
+        articulos.unshift("balon");
+
+        document.write("<p>Se olvido este emenento <strong>");
+
+        document.write(articulos[0]+"</strong></p>");
+
+        document.write("<p>Agregamos un articulo al final: <strong>");
+
+        articulos.push(prompt("por favor introducir el articulo"));
+
+        document.write(articulos[articulos.length-1]+"</strong></p>");
 		
 	  </script>
      </div>
